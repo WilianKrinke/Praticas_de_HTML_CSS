@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>base</title>
+    <meta name="author" content="Wilian Krinke">
+    <meta name="description" content="Alguma Descrição Legal">
+    <meta name="keywords" content="html5,tecnologia">
+    <meta name="viewport" content="width=device-width">
+    <style media="screen">
+
+      body{
+        margin:0px;
+      }
+
+
+      @keyframes Slide {
+        0%{
+          transform: translateY(0);
+        }
+
+        22%{
+          transform: translateY(0);
+        }
+
+        25%{
+          transform: translateY(-50vh);
+        }
+
+        47%{
+          transform: translateY(-50vh);
+        }
+
+        50%{
+          transform: translateY(-100vh);
+        }
+
+        72%{
+          transform: translateY(-100vh);
+        }
+
+        75%{
+          transform: translateY(-150vh);
+        }
+
+        97%{
+          transform: translateY(-150vh);
+        }
+
+        100%{
+          transform: translateY(0);
+        }}
+
+      .externo{
+        width: 50vw;
+        height: 50vh;
+        border: 10px solid black;
+        box-shadow: 0 0 10px black;
+        margin-left: 10vw;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+
+      .interno{
+        width: 100%;
+        will-change: transform;
+
+      }
+
+      .interno img{
+        display: block;
+        height: 50vh;
+        width: 100%;
+        /* object-fit: cover; */
+        /* Use esta propriedade para imagens inseridas no html, equivalente ao backgroud size */
+        animation: Slide 15s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Animation slide show</h1>
+
+    <div class="externo">
+      <div class="interno">
+        <img src="./imagens/Foto1.jpg" alt="Alguma coisa">
+        <img src="./imagens/Foto 2.jpg" alt="Alguma coisa">
+        <img src="./imagens/Foto 3.jpg" alt="Alguma coisa">
+        <img src="./imagens/Foto 4.jpg" alt="Alguma coisa">
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

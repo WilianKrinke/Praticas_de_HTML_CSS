@@ -1,0 +1,139 @@
+body{/*Primeiro passo zerar padding e margin do body*/
+  font-family: tahoma, arial,sans-serif;
+  margin:0;
+  padding: 0;
+}
+
+.Principal{/*Segundo ajustar o div principal*/
+  width: 1024px;/*Tamanho defout*/
+  margin:20px auto;/*para centralizar*/
+}
+
+.header-top{
+  height: 50px;
+  background-color: #162028;
+  position: relative;
+
+}
+
+.logotipo{
+  margin: 5px 0 0 150px;
+}
+
+.header-nav{
+  position: absolute;top:0;right:0;
+  height: 100%;
+
+}
+
+.header-nav ul{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.header-nav li{
+  display: inline-block;
+  margin: 0 30px 0 0;
+  list-style-type: none;
+  padding: 13px;
+}
+
+.header-nav a{
+  text-decoration: none;
+  color: #425564;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transition: color .3s linear;/*primeiro a propriedade, velocidade e linear*/
+}
+
+.header-nav a:hover{
+  color: #fff;
+}
+
+.portfolio{
+  padding: 50px 100px;
+  text-align: center;
+}
+
+.portfolio h1{
+  font-size: 36px;
+  color: #252525;
+}
+
+.portfolio p{
+  font-size: 16px;
+  line-height: 32px;
+  color: #555;
+}
+
+
+.gallery{
+  color: #555;
+  padding: 0 100px 50px 100px;
+  overflow: auto;
+
+}
+
+.gallerycard{
+  width: 32%;
+  float: left;
+  text-align: center;
+}
+
+.gallerycard img{
+  width: 300px;
+  height: 450px;
+}
+
+.gallery-title{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.About{
+  background-color: #003d52;
+  padding: 100px;
+  color: #fff;
+  background-image: url(https://cdn.suwalls.com/wallpapers/abstract/polygon-26677-2560x1600.jpg);
+  background-repeat: no-repeat;
+}
+
+.About h2{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: normal;
+
+}
+
+.About p{
+  line-height: 1.5;
+  width: 50%;
+}
+
+.Contact{
+  text-align: center;
+  margin: 50px 0px;
+  color: #143f52;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-style: normal;
+}
+
+.Contact address{
+  font-style: normal;
+  font-weight: bold;
+}
+
+.rodape{
+  background: #0b171f;
+  padding: 25px;
+  font-size: 12px;
+  color: #6f8597;
+  letter-spacing: 5px;
+  text-align: center;
+}

@@ -1,0 +1,324 @@
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #bbbbbb;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: #787878;
+  font-weight: normal;;
+  margin: 0px 0px 1em;
+}
+
+h1{
+  font-size: 36px;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 26px;
+}
+h4{
+  font-size: 22px;
+}
+h5{
+  font-size: 18px;
+}
+h6{
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  margin: 0px 0px 1em;
+}
+
+img{
+  max-width: 38%;
+}
+
+sub, sup{
+  font-size: 12px;
+}
+
+code{
+  background-color: #f7f7f7;
+  border-radius: .35em;
+  border: 2px solid #efefef;
+  font-size: .9em;
+  padding: 0.25em 0.65em;
+  font-family: "courier New";
+  color: #888;
+}
+
+pre code{
+  display: block;
+}
+
+blockquote{
+  border-left: 5px solid #efefef;
+  margin: 2em 0px;
+  padding: .5em 0 .5em 1.5em;
+}
+
+ul, ol{
+  margin: 1em 0px;
+  padding: 0px;
+  padding-left: 1.2em;
+}
+li{
+  padding-left: .5em;
+}
+
+.ul-Alternate{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.ul-Alternate li{
+  border-bottom: 1px solid #888;
+  border-left: 2px solid #888;
+  padding-left: 2px;
+}
+
+.ul-Alternate li:last-child{
+  border-bottom: 0px;
+}
+
+.ul-icons{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.ul-icons li{
+  display: inline-block;
+  font-size: 2em;
+  color: #555;
+  transition: color .3s;
+  transition-timing-function: ease-in-out;
+  position: relative;right:17px;
+}
+
+.ul-icons li:hover{
+  color:#000;
+}
+
+input, label, textarea,select{
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border .1s;
+  transition-timing-function: linear;
+}
+
+input, textarea, select{
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+  border: 1px solid;
+  border-color: #49bf9d;
+}
+
+input:hover, textarea:hover{
+  border-color: #49bf9d;
+}
+
+input[type="radio"],input[type="checkbox"]{
+  width: auto;
+}
+
+.submit{
+  width: 150px;
+  transition: border .1s;
+  transition-timing-function: linear;
+  border: 1px solid transparent;
+}
+
+.submit:hover{
+  border: 1px solid #49bf9d;
+}
+
+
+.mainheader{
+  position: fixed; top:0px; left: 0px;
+  height: 100%;
+  width: 35%;
+  padding: 124px 74px 72px 54px;
+  box-sizing: border-box;
+  background-image: url(https://www.osmais.com/wallpapers/201202/montanha-wallpaper.jpg);
+  background-position: center top;
+  background-size: cover;
+  text-align: right;
+}
+
+.mainheader-title{
+  font-size: 22px;
+  line-height: 1.5;
+  color: white;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.mainheader-title strong{
+  color: white;
+  font-weight: normal;
+}
+.maincontent{
+  width: 65%;
+  margin-left: 35%;
+  padding: 124px 74px 72px 54px;
+  box-sizing: border-box;
+}
+
+/*grid*/
+
+.col-2-3{
+  width: 65.3%;
+  float: left;
+}
+
+.col-1-3{
+  width: 32.3%;
+  float: left;
+}
+
+.col-1-3:nth-child(3n - 2){
+  margin-right: 1.55%;
+}
+
+.col-1-3:nth-child(3n){
+  margin-left: 1.55%;
+}
+
+.col-2-3 + .col-1-3, .col-1-3 + .col-2-3{
+  margin-left: 1.55%;
+}
+
+.Row{
+  overflow: auto;
+}
+.col-2{
+  width: 49%;
+  float: left;
+}
+
+.col-2:first-child{
+  margin-right: 1%;
+}
+
+.col-2:last-child{
+  margin-left: 1%;
+}
+
+.button-default{
+  background-color: #49bf9b;
+  border: 2px solid #49bf9b;
+  color: white;
+  padding: .50em 1.50em;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.button-defaut-stroke{
+  background-color: white;
+  border-color: #efefef;
+  color: inherit;
+}
+
+.button-defaut-stroke:hover{
+  color: #49bf9b;
+  border-color: #49bf9b;
+  border: 3px;
+}
+
+.button-defaut-small{
+  font-size: .6em;
+  }
+
+.button-defaut-full{
+  display: block;
+}
+
+.table{
+  width: 100%;
+  margin: 0 0 2em 0;
+  border-collapse: collapse;
+}
+.tfoot tr td{
+  border: 1px solid transparent;
+}
+
+.table td, tr, th{
+  padding: .75em;
+  border: 1px solid #000;
+}
+
+.table thead tr:first-child{
+  border-top: 2px solid #000;
+}
+
+.table tbody tr:last-child{
+  border-bottom: 2px solid #000;
+}
+
+.table tbody tr:nth-child(odd){
+  background-color: #dbdbdb;
+}
+
+.recentworkscard img{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.mainheader-link img{
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.gallery-img img{
+  width: 100%;
+  border-radius: 5px;
+
+}
+.gallery-thumb img{
+  margin-bottom: 1.55%;
+  border-radius: 5px;
+}
+
+.footercontent{
+  position: fixed;bottom:230px;left:290px;
+  font-size: 35px;
+  letter-spacing: 15px;
+}
+
+.footercontent i{
+  transition: all .3s;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footercontent i:hover{
+  color: rgba(0, 0, 0, 1.0);
+}
+
+.footercontent2{
+  position: fixed;bottom:180px;left:55px;
+}
+
+.footercontent2 h6{
+  color: #000;
+}
