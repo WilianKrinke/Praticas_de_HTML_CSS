@@ -1,0 +1,309 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+*{
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;   
+   font-family: sans-serif; 
+}
+.header{
+    background-color: #c0c0cc;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+.main{
+    background-color: #e3e3ec;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: auto;
+}
+
+.footer{
+    background-color: #c0c0cc;
+    height: 10vh;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    
+}
+
+.containerlogo{
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    width: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 15vw;
+    -webkit-transition: color .6s ease-in-out;
+    -o-transition: color .6s ease-in-out;
+    transition: color .6s ease-in-out;
+    text-transform: uppercase;
+         
+}
+
+.containerlogo:hover{
+    color: #fff;
+}
+
+.nav{
+    position: absolute;right: 30vw;top:8px;
+}
+
+.list li{
+    display: inline;
+    margin-right: 2vw;
+    font-size: 1em;
+    -webkit-transition: color .6s ease-in-out;
+    -o-transition: color .6s ease-in-out;
+    transition: color .6s ease-in-out;
+}
+
+.list li:hover{
+    color: #fff;
+}
+
+.exblink{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.inptxt{
+    height: 25px;
+    width: 18vw;
+    border-radius: 10px;
+    outline: none;
+    position: absolute;top: 22px;right: 10vw;
+    border: none;
+    padding: 5px;
+}
+
+.fas{
+    position: absolute;top: 27px;right: 10.6vw;
+    -webkit-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+
+.fas:hover{
+    color: #ccc;
+}
+
+.hmbrgrmenu{
+    width: 80px;
+    height: 10vh;
+    position: absolute;right:0px;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.line{
+    height: 5px;
+    width: 40px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    border-radius: 50px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.line::before, .line::after{
+    content: '';
+    height: 5px;
+    width: 40px;    
+    display: block;
+    border-radius: 50px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: black;
+}
+
+.line::before{
+    position: relative;top:10px;    
+}
+
+.line::after{
+    position: relative;top:-15px;
+}
+
+.containermain{
+    border: 1px solid;
+    width: 80vw;        
+}
+
+.div1, .div2, .div3{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;        
+}
+
+h3{
+    text-align: center;
+}
+
+.btn{
+    background-color: cadetblue;
+    display: inline;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.divtexto p{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    word-break: break-all;
+}
+
+.menumob{
+    width: 0px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        -webkit-box-flex: 1;
+            -ms-flex: auto;
+                flex: auto;
+    }
+
+    .containerlogo{
+        margin: 0px auto;
+        position: relative;right: 5px;
+        font-size: 20px;
+        z-index: 150;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .divsrch{
+        display: none;
+    }
+
+    .hmbrgrmenu{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+        z-index: 120;
+    }    
+
+    .line::after, .line::before, .line{
+        height: 5px;
+        width: 30px;
+        margin: 0px;
+        padding: 0px;
+    } 
+    
+    /* ANIMATION */
+
+    .open{
+        background-color: transparent;
+        
+    }
+
+    .open::after{
+        -webkit-transform: rotate(25deg);
+            -ms-transform: rotate(25deg);
+                transform: rotate(25deg);
+        position: relative;top:-10px;
+        width: 30px;
+        background-color: cornsilk;
+        z-index: 120;
+    }
+
+    .open::before{
+        -webkit-transform: rotate(-25deg);
+            -ms-transform: rotate(-25deg);
+                transform: rotate(-25deg);
+        position: relative;top:6px;
+        width: 30px;
+        background-color: cornsilk;
+        z-index: 120;
+    }
+
+    .menumob{
+        z-index: 110;
+        background-color: rgba(72, 65, 64, 0.98);
+        height: 100vh;
+        width: 0px;
+        -webkit-transition: width .3s ease-in-out;
+        -o-transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+        overflow: hidden;
+        margin: 0px;       
+    }
+
+    .listamob{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        
+    }
+
+    .listamob li{
+        cursor: pointer;
+        color: white;
+        display: block;
+        text-transform: uppercase;
+        margin-top: 15px;
+        position: relative;top:72px;
+        -webkit-transition: color .3s ease-in-out;
+        -o-transition: color .3s ease-in-out;
+        transition: color .3s ease-in-out;
+    }
+
+    .listamob li:hover{
+        color: black;
+    }  
+}

@@ -1,0 +1,114 @@
+body{
+  font-family: arial,serif;
+  background-color: #ccc;
+  margin: 0;
+}
+
+#Foto1{
+  background-image: url(https://warpsound.com.br/wp-content/uploads/2019/09/fone-de-ouvido-warpsound2.png);
+  height: 500px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  border-top: 1px solid transparent;
+}
+
+.Hero-Content{
+  font-size: 20px;
+  margin-top: 300px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.Hero-Content p{
+  background-color: rgba(000, 0, 0, 0.8);
+  display: inline-block;
+  padding: 10px;
+  border-bottom: 2px solid #fff;
+
+}
+
+.Hero-Content h1{
+  text-transform: uppercase;
+}
+
+.Linha{
+  display: inline-block;
+  list-style: none;
+  border: 1px solid #fff;
+  margin-left: 10px;
+}
+
+.Content-linha{
+  text-align: right;
+  margin: 10px 20px 0 0;
+}
+
+.Linha a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  background-color: rgba(0, 0, 0,0.2);
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+
+}
+.Linha a:hover{
+  background-color: rgba(0, 0, 0,0.6);
+
+}
+
+main{
+  margin: auto;
+  width: 90%;
+}
+
+.content-section{
+  text-align: center;
+  background-color: #FFDFF8;
+  padding: 15px;
+  margin-top: 15px;
+  overflow: auto;
+}
+
+.Card{
+  width: 32%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.card-1, .card-2{
+  margin-right: 2%;
+}
+
+.Card img{
+  width: 100%;
+  display: block;
+}
+
+.Card p{
+  background-color: rgba(000, 0, 0, 0.5);
+  color: #fff;
+  margin: 0px;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+
+.Content-article{
+  text-align: left;
+}
+
+footer{
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(000, 0, 0, 0.5);
+  width: 100%;
+  margin: 10px 0px;
+  color: #fff;
+
+}
